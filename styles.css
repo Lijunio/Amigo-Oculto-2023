@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background-layers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-gradient {
+    background: linear-gradient(to bottom, #c62828, #2e7d32);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-gif {
+    background-image: url('flocosdeneve.gif');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.5;
+    animation: snowFall 60s linear infinite;
+}
+
+@keyframes snowFall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+header, main {
+    position: relative;
+    z-index: 3;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+header {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    background: url('rena.gif') center/contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 90%;
+    background-position: center;
+    animation: moveGif 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveGif {
+    0% {
+        left: 100%;
+    }
+    50% {
+        left: -100%;
+    }
+    50.01% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+
+table tbody tr td:first-child {
+    color: white; 
+    font-weight: bold;
+}
+
+table tbody tr td:nth-child(2) input {
+    color: black; 
+}
+
+table tbody tr td {
+    background-color: #2e7d32;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>td,
+.table-striped>tbody>tr:nth-of-type(even)>td {
+    background-color: #2e7d32;
+}
+
+/* telas pequenas */
+@media (max-width: 767.98px) {
+    .row-cols-sm-2 .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .row-cols-md-3 .col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    h2.text-center {
+        margin-top: 25px;
+    }
+}

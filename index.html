@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <title>Natal 2023 - Sorteio de Amigo Oculto</title>
+</head>
+<body>
+    <div class="background-layers">
+        <div class="background-gradient"></div>
+        <div class="background-gif"></div>
+    </div>
+
+    <header class="text-center p-4">
+        <div>
+            <h1>Natal 2023</h1>
+            <h1>Sorteio de Amigo Oculto</h1>
+        </div>
+        <div>
+            <button class="btn btn-success" onclick="sortearAmigo()">Sortear</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Participantes</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante1">Adilson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante2">Aghata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante3">Aldeir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante4">Ana Flávia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante5">Cleide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante6">Danilo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante7">Danielle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante8">Dedé</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante9">Ellen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante10">Elias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante11">Elias Junio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante12">Eloina</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante13">Eninho</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante14">Flávio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante15">Gabriel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante16">Isabelle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante17">Juliana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante18">Kelly</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante19">Letícia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante20">Lorena</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante21">Márcia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante22">Maria Eduarda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante23">Izabel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante24">Naena</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante25">Naiara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante26">Nicole</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante27">Nicollas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante28">Pauliana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante29">Pedro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante30">Samia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante31">Silvania</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante32">Tawane</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante33">Washington</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <p class="card-text" id="participante34">Yasmin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">Sorteio</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Adilson seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio1" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Aghata seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio2" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Aldeir seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio3" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Ana Flávia seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio4" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Cleide seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio5" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Danilo seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio6" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Danielle seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio7" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Dedé seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio8" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Ellen seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio9" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Elias seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio10" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Elias Junio seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio11" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Eloina seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio12" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Eninho seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio13" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Flávio seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio14" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio15" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Isabelle seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio16" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Juliana seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio17" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Kelly seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio18" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Letícia seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio19" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lorena seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio20" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Márcia seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio21" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Maria Eduarda seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio22" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Izabel seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio23" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Naena seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio24" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Naiara seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio25" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nicole seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio26" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nicollas seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio27" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Pauliana seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio28" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Pedro seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio29" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Samia seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio30" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Silvania seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio31" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Tawane seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio32" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Washington seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio33" readonly class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Yasmin seu amigo oculto é</td>
+                                <td><input type="text" id="sorteio34" readonly class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modalMusica" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deseja ouvir a música de Natal?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button id="btnMusicaSim" class="btn btn-primary">Sim</button>
+                    <button id="btnMusicaNao" class="btn btn-secondary">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="musica" autoplay>
+        <source src="musica.m4a" type="audio/mp4">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div id="modalDownload" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deseja baixar os resultados do sorteio?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button id="btnDownloadSim" class="btn btn-primary">Sim</button>
+                    <button id="btnDownloadNao" class="btn btn-secondary">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
