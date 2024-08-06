@@ -1,7 +1,3 @@
-Claro, aqui está um exemplo de README que você pode usar para seu projeto no GitHub:
-
----
-
 # Sorteio de Amigo Oculto - Natal 2023
 
 ## Descrição
